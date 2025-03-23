@@ -3,18 +3,14 @@ import java.util.ArrayList;
 public class Kategoriks {
     private String namaKategori;
     private ArrayList<BukunyaDevi> daftarBuku;
-    
+
     public Kategoriks(String namaKategori) {
         this.namaKategori = namaKategori;
         this.daftarBuku = new ArrayList<>();
     }
-    
+
     public void tambahBuku(BukunyaDevi buku) {
         daftarBuku.add(buku);
-    }
-
-    public ArrayList<BukunyaDevi> getDaftarBuku() {
-        return daftarBuku;
     }
 
     public void tampilkanBuku() {
