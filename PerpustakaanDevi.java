@@ -1,57 +1,60 @@
 public class PerpustakaanDevi {
     public static void main(String[] args) {
-        Kategoriks[] kategoriList = {
-            new Kategoriks("Teknologi"), new Kategoriks("Filsafat"), new Kategoriks("Sejarah"),
-            new Kategoriks("Agama"), new Kategoriks("Psikologi"), new Kategoriks("Politik"), new Kategoriks("Fiksi")
-        };
+        BukunyaDevi[] daftarBuku = new BukunyaDevi[35];
 
-        String[][] dataBuku = {
-            {"Menyelami Teknologi", "Budi Raharjo", "2020", "Gramedia", "Teknologi", "Bukunya bagus banget makanya beli dongggg jangan gratisan kan penulis udah hardwork banget nih ye"},
-            {"Revolusi Digital", "Soe Hok Gie", "2019", "Mizan", "Teknologi", "Bukunya bagus banget makanya beli dongggg jangan gratisan kan penulis udah hardwork banget nih ye"},
-            {"Inovasi Tak Terbatas", "Arief Budiman", "2021", "Elex Media", "Teknologi", "Bukunya bagus banget makanya beli dongggg jangan gratisan kan penulis udah hardwork banget nih ye"},
-            {"Teknologi Masa Depan", "Rani Suryani", "2022", "Indie Book", "Teknologi", "Bukunya bagus banget makanya beli dongggg jangan gratisan kan penulis udah hardwork banget nih ye"},
-            {"Transformasi Digital", "Tomi Gunawan", "2020", "Alpukat", "Teknologi", "Bukunya bagus banget makanya beli dongggg jangan gratisan kan penulis udah hardwork banget nih ye"},
-            {"Filsafat Hidup", "Sukarno", "2015", "Alfabet", "Filsafat", "Bukunya bagus banget makanya beli dongggg jangan gratisan kan penulis udah hardwork banget nih ye"},
-            {"Pemikiran Filosofis", "Joko Widodo", "2018", "Buku Kita", "Filsafat", "Bukunya bagus banget makanya beli dongggg jangan gratisan kan penulis udah hardwork banget nih ye"},
-            {"Merenung di Dunia Filsafat", "Pramudya Ananta Toer", "2017", "Pustaka Populer", "Filsafat", "Bukunya bagus banget makanya beli dongggg jangan gratisan kan penulis udah hardwork banget nih ye"},
-            {"Sejarah Indonesia", "Eddy Saparudin", "2016", "Erlangga", "Sejarah", "Bukunya bagus banget makanya beli dongggg jangan gratisan kan penulis udah hardwork banget nih ye"},
-            {"Perang Dunia Kedua", "Rudi Wijaya", "2015", "Yayasan Pustaka", "Sejarah", "Bukunya bagus banget makanya beli dongggg jangan gratisan kan penulis udah hardwork banget nih ye"},
-            {"Al-Qur'an", "K.H. Hasyim Asyari", "2010", "Mizan", "Agama", "Bukunya bagus banget makanya beli dongggg jangan gratisan kan penulis udah hardwork banget nih ye"},
-            {"Kisah Nabi Muhammad SAW", "Amien Rais", "2015", "Buku Muslim", "Agama", "Bukunya bagus banget makanya beli dongggg jangan gratisan kan penulis udah hardwork banget nih ye"},
-            {"Psikologi Manusia", "Psikologina", "2021", "Psikologi Press", "Psikologi", "Bukunya bagus banget makanya beli dongggg jangan gratisan kan penulis udah hardwork banget nih ye"},
-            {"Politik Indonesia", "Puan Maharani", "2016", "Buku Politik", "Politik", "Bukunya bagus banget makanya beli dongggg jangan gratisan kan penulis udah hardwork banget nih ye"},
-            {"Laskar Pelangi", "Andrea Hirata", "2005", "Bentang Pustaka", "Fiksi", "Bukunya bagus banget makanya beli dongggg jangan gratisan kan penulis udah hardwork banget nih ye"}
-        };
+        daftarBuku[0] = new BukunyaDevi("Menyelami Teknologi", "Budi Raharjo", 2020, "Gramedia", "Teknologi", "Sinopsis tentang menyelami teknologi. Klo mau tau beli ya plis beli jgnn bajakan");
+        daftarBuku[1] = new BukunyaDevi("Revolusi Digital", "Soe Hok Gie", 2019, "Mizan", "Teknologi", "Sinopsis tentang revolusi digital.Klo mau tau beli ya plis beli jgnn bajakan");
+        daftarBuku[2] = new BukunyaDevi("Inovasi Tak Terbatas", "Arief Budiman", 2021, "Elex Media", "Teknologi", "Sinopsis tentang inovasi tak terbatas.Klo mau tau beli ya plis beli jgnn bajakan");
+        daftarBuku[3] = new BukunyaDevi("Teknologi Masa Depan", "Rani Suryani", 2022, "Indie Book", "Teknologi", "Sinopsis tentang teknologi masa depan.Klo mau tau beli ya plis beli jgnn bajakan");
+        daftarBuku[4] = new BukunyaDevi("Transformasi Digital", "Tomi Gunawan", 2020, "Alpukat", "Teknologi", "Sinopsis tentang transformasi digital.Klo mau tau beli ya plis beli jgnn bajakan");
+        daftarBuku[5] = new BukunyaDevi("AI Cerdas", "Fahmi Andri", 2021, "Deep Tech", "Teknologi", "Sinopsis tentang AI cerdas.Klo mau tau beli ya plis beli jgnn bajakan");
+        daftarBuku[6] = new BukunyaDevi("IoT untuk Pemula", "Yuniarto", 2019, "Smart Book", "Teknologi", "Sinopsis tentang IoT.Klo mau tau beli ya plis beli jgnn bajakan");
+        daftarBuku[7] = new BukunyaDevi("Cloud Computing", "Hana Lestari", 2020, "Digital Press", "Teknologi", "Sinopsis tentang cloud computing.Klo mau tau beli ya plis beli jgnn bajakan");
+        daftarBuku[8] = new BukunyaDevi("Big Data Era", "Joni Susanto", 2022, "Tech Media", "Teknologi", "Sinopsis tentang big data.Klo mau tau beli ya plis beli jgnn bajakan");
+        daftarBuku[9] = new BukunyaDevi("Blockchain Basics", "Dewi Kartika", 2019, "Crypto Books", "Teknologi", "Sinopsis tentang blockchain.Klo mau tau beli ya plis beli jgnn bajakan");
+        daftarBuku[10] = new BukunyaDevi("Keamanan Siber", "Ayu Pratiwi", 2020, "Cyber Press", "Teknologi", "Sinopsis tentang keamanan siber. Klo mau tau beli ya plis beli jgnn bajakan");
+        daftarBuku[11] = new BukunyaDevi("Robotika Modern", "Fajar Prabowo", 2021, "Robo Books", "Teknologi", "Sinopsis tentang robotika. Klo mau tau beli ya plis beli jgnn bajakan");
+        daftarBuku[12] = new BukunyaDevi("Pemrograman Java", "Rina Ayu", 2022, "Coding Press", "Teknologi", "Sinopsis tentang pemrograman Java. Klo mau tau beli ya plis beli jgnn bajakan");
+        daftarBuku[13] = new BukunyaDevi("Pemrograman Python", "Andi Syahputra", 2020, "Code World", "Teknologi", "Sinopsis tentang Python. Klo mau tau beli ya plis beli jgnn bajakan");
+        daftarBuku[14] = new BukunyaDevi("Pemrograman C++", "Wahyu Hermawan", 2019, "Programming Media", "Teknologi", "Sinopsis tentang C++. Klo mau tau beli ya plis beli jgnn bajakan");
+        daftarBuku[15] = new BukunyaDevi("Teknologi 5G", "Lia Kurniawati", 2021, "Network Press", "Teknologi", "Sinopsis tentang teknologi 5G. Klo mau tau beli ya plis beli jgnn bajakan");
+        daftarBuku[16] = new BukunyaDevi("Machine Learning", "Bambang Setiawan", 2020, "AI Books", "Teknologi", "Sinopsis tentang machine learning. Klo mau tau beli ya plis beli jgnn bajakan");
+        daftarBuku[17] = new BukunyaDevi("Data Science", "Novi Rahmawati", 2022, "Science Press", "Teknologi", "Sinopsis tentang data science.Klo mau tau beli ya plis beli jgnn bajakan");
+        daftarBuku[18] = new BukunyaDevi("Mobile Apps", "Dedi Santoso", 2019, "Mobile Tech", "Teknologi", "Sinopsis tentang mobile apps.Klo mau tau beli ya plis beli jgnn bajakan");
+        daftarBuku[19] = new BukunyaDevi("Web Development", "Indra Saputra", 2021, "Web Media", "Teknologi", "Sinopsis tentang web development.");
+        daftarBuku[20] = new BukunyaDevi("UX Design", "Desi Indah", 2020, "Creative Book", "Teknologi", "Sinopsis tentang UX design. Klo mau tau beli ya plis beli jgnn bajakan");
+        daftarBuku[21] = new BukunyaDevi("Game Development", "Eka Prasetya", 2022, "Game Press", "Teknologi", "Sinopsis tentang game development. Klo mau tau beli ya plis beli jgnn bajakan");
+        daftarBuku[22] = new BukunyaDevi("Teknologi Ramah Lingkungan", "Putri Sari", 2020, "Eco Tech", "Teknologi", "Sinopsis tentang teknologi ramah lingkungan.");
+        daftarBuku[23] = new BukunyaDevi("Teknologi Medis", "Taufik Hidayat", 2021, "Health Tech", "Teknologi", "Sinopsis tentang teknologi medis. Klo mau tau beli ya plis beli jgnn bajakan");
+        daftarBuku[24] = new BukunyaDevi("Virtual Reality", "Ika Fauziah", 2022, "VR Media", "Teknologi", "Sinopsis tentang virtual reality. Klo mau tau beli ya plis beli jgnn bajakan");
+        daftarBuku[25] = new BukunyaDevi("Augmented Reality", "Bayu Mahardika", 2020, "AR Books", "Teknologi", "Sinopsis tentang augmented reality.Klo mau tau beli ya plis beli jgnn bajakan");
+        daftarBuku[26] = new BukunyaDevi("Teknologi Satelit", "Sari Dewi", 2019, "Space Media", "Teknologi", "Sinopsis tentang teknologi satelit.Klo mau tau beli ya plis beli jgnn bajakan");
+        daftarBuku[27] = new BukunyaDevi("Smart Home", "Hendro Putra", 2021, "Smart Tech", "Teknologi", "Sinopsis tentang smart home. Klo mau tau beli ya plis beli jgnn bajakan");
+        daftarBuku[28] = new BukunyaDevi("Teknologi Pangan", "Ratna Sari", 2020, "Food Tech", "Teknologi", "Sinopsis tentang teknologi pangan.Klo mau tau beli ya plis beli jgnn bajakan");
+        daftarBuku[29] = new BukunyaDevi("Teknologi Energi", "Halim Gunawan", 2022, "Energy Media", "Teknologi", "Sinopsis tentang teknologi energi.Klo mau tau beli ya plis beli jgnn bajakan");
+        daftarBuku[30] = new BukunyaDevi("Cybersecurity Advanced", "Riza Rahman", 2020, "Cyber Book", "Teknologi", "Sinopsis tentang cybersecurity.Klo mau tau beli ya plis beli jgnn bajakan");
+        daftarBuku[31] = new BukunyaDevi("Wearable Technology", "Nurul Azizah", 2021, "WearTech", "Teknologi", "Sinopsis tentang wearable technology.Klo mau tau beli ya plis beli jgnn bajakan");
+        daftarBuku[32] = new BukunyaDevi("Teknologi Otomotif", "Agus Santoso", 2019, "Auto Books", "Teknologi", "Sinopsis tentang teknologi otomotif. Klo mau tau beli ya plis beli jgnn bajakan");
+        daftarBuku[33] = new BukunyaDevi("Teknologi Transportasi", "Dwi Setyo", 2020, "Trans Book", "Teknologi", "Sinopsis tentang teknologi transportasi. Klo mau tau beli ya plis beli jgnn bajakan");
+        daftarBuku[34] = new BukunyaDevi("Smart City", "Rika Ayuningtyas", 2021, "City Tech", "Teknologi", "Sinopsis tentang smart city.bli lah capek aku suda ini kode ku ke cut dan gatau deh.");
 
-        for (String[] buku : dataBuku) {
-            int indexKategori = switch (buku[4]) {
-                case "Teknologi" -> 0;
-                case "Filsafat" -> 1;
-                case "Sejarah" -> 2;
-                case "Agama" -> 3;
-                case "Psikologi" -> 4;
-                case "Politik" -> 5;
-                case "Fiksi" -> 6;
-                default -> -1;
-            };
-            if (indexKategori != -1) {
-                kategoriList[indexKategori].tambahBuku(new BukunyaDevi(buku[0], buku[1], Integer.parseInt(buku[2]), buku[3], buku[4], buku[5]));
+        for (int i = 0; i < daftarBuku.length; i++) {
+            if (daftarBuku[i] != null) {
+                daftarBuku[i].tampilkanBuku();
+                int jumlahKata = daftarBuku[i].hitungJumlahKataSinopsis();
+                System.out.println("Jumlah kata sinopsis buku ke-" + (i+1) + ": " + jumlahKata);
+                System.out.println();
             }
         }
+        BukunyaDevi bukuSalinan = daftarBuku[0].copy();
 
-        for (Kategoriks kategori : kategoriList) {
-            kategori.tampilkanBuku();
-        }
+        System.out.println("buku hasil salinan:");
+        bukuSalinan.tampilkanBuku();
 
-        System.out.println("===== Tingkat Kesamaan Buku =====");
-        for (Kategoriks kategori : kategoriList) {
-            for (int i = 0; i < kategori.getDaftarBuku().size(); i++) {
-                for (int j = i + 1; j < kategori.getDaftarBuku().size(); j++) {
-                    BukunyaDevi buku1 = kategori.getDaftarBuku().get(i);
-                    BukunyaDevi buku2 = kategori.getDaftarBuku().get(j);
-                    System.out.println("Kesamaan antara \"" + buku1.getJudul() + "\" dan \"" + buku2.getJudul() + "\": " + buku1.cekKesamaan(buku2) + "%");
-                }
-            }
-        }
-    }
+ 
+        double kesamaan = daftarBuku[0].cekTingkatKesamaan(daftarBuku[1]);
+        System.out.printf("tingkat kesamaan antara buku pertama dan kedua: %.2f%%\n", kesamaan);
+        
+    }        
 }
+      
